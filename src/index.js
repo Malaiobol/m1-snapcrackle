@@ -1,31 +1,30 @@
 function snapCrackle(maxValue) {
 
-    let listaNumerica = [];
+    let listaNumerica = '';
 
     for (let i = 1; i <= maxValue; i++) {
 
         if (i % 2 === 1 && i % 5 === 0) {
 
-           listaNumerica.push('SnapCrackle');
+          listaNumerica += ("SnapCrackle, ");
 
         }  else if ( i % 5 === 0) {
 
-            listaNumerica.push('Crackle');
+            listaNumerica += ("Crackle, ");
 
         }  else if ( i % 2 === 1) {
 
-        listaNumerica.push('Snap');
+        listaNumerica += ("Snap, ");
 
         }  else {
 
-            listaNumerica.push(i); 
+            listaNumerica += (i + ", "); 
 
         }
     }
     return listaNumerica;
 }
-console.log(snapCrackle(12));
-
+console.log (snapCrackle(12));
 
 
 
