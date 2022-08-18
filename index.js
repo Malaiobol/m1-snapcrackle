@@ -25,3 +25,7 @@ function snapCrackle(maxValue) {
     return listaNumerica;
 }
 console.log(snapCrackle(12));
+
+
+
+
